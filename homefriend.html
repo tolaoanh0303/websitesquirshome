@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="homefriend.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <title>Squir's Home - Phòng học</title>
+</head>
+<body>
+    <!-- Home -->
+   <div class="home">
+        <!-- Navigation bar -->
+        <div class="navi_bar">
+            <!-- Navibar/Logo Squir's Home -->
+            <div class="logo">
+                <div class="logo_image"> </div>
+                <div class="logo_text"> SQUIR'S HOME </div>
+            </div>
+            <!-- Navibar/Tên phòng -->
+            <div class="room_name"> CHINH'S ROOM </div>
+            <!-- Navibar/Người tham gia phòng -->
+            <div class="joiner" title="Người tham gia phòng"> 
+                <div class="joiner_ava joiner_ava_1" title="Hoàng Chinh"> </div>
+                <div class="joiner_ava joiner_ava_2" title="Bùi Trần Việt Hoàng"> </div>
+                <div class="joiner_ava joiner_ava_3" title="Phạm Phương Trinh"> </div>
+                <div class="joiner_ava joiner_ava_4" title="Lê Bảo Ngọc"> </div>
+                <div class="joiner_ava joiner_ava_5" title="Ngô Văn Thìn"> </div>
+            </div>
+            <!-- Navibar/Các lựa chọn điều chỉnh giao diện -->
+            <div class="option">
+                <div class="option_icon1" title="Chia sẻ màn hình">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+                <a href="#" class="option_icon" title="phóng to">
+                    <i class="fa-solid fa-expand"></i>
+                </a>
+            </div>
+            <!-- Navibar/Box điều chỉnh dừng/play nhạc -->
+            <audio loop>
+                <!-- <audio autoplay loop> -->
+                    <source src="sound/sound1.mp3">
+                </audio>
+                <div class="play_box">
+                    <div class="play_box_icon play_box_icon_playback">
+                        <i class="fa-solid fa-play fa-1"></i>
+                    </div>
+                    <div href="" class="play_box_icon play_box_icon_play">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="play_box_icon play_box_icon_pause">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <div class="play_box_icon play_box_icon_playforward">
+                        <i class="fa-solid fa-play fa-3"></i>
+                    </div>
+                </div>
+            <!-- Navibar/Profile và Cài đặt -->
+            <div class="settings">
+                <!-- Profile -->
+                <div class="settings_option">
+                    <div class="settings_profile" title="Profile">
+                        <a href="profile.html" class="settings_profile">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Cài đặt -->
+                <div id="settings_bar">
+                    <div id="settings_bar-dot">
+                        <div class="settings_bar-dotted"></div>
+                        <div class="settings_bar-dotted"></div>
+                        <div class="settings_bar-dotted"></div>
+                    </div>
+                    <form action="" class="settings_item"  id="settings_list" >
+                        <div class="settings_item_1">
+                            <a href="thongbao.html" class="settings_item_1">
+                                <div class="settings_item_text">Cài đặt</div>
+                            </a>
+                        </div>
+                        <div class="settings_item_2">
+                            <a href="vechungtoi.html" class="settings_item_2">
+                                <div class="settings_item_text">Về chúng tôi</div>
+                            </a>
+                        </div> 
+                        <div class="settings_item_3">
+                            <a href="trangdangnhap.html" class="settings_item_3">
+                                <div class="settings_item_text">Đăng xuất</div>
+                            </a>
+                        </div>       
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Box hiển thị tên âm thanh đang phát -->
+        <div class="songname">
+            <div class="songname_1">
+                ~ Thiên nhiên 1 ~
+            </div>
+        </div>
+        <!-- Menu option -->
+        <div class="menu">
+            <div class="menu_icon menu_icon_1" id="menu_icon_1">
+                <i class="fa-regular fa-clock"></i>
+                <span class="menu_icon_text">Thời gian</span>
+            </div>
+            <div class="menu_icon menu_icon_2" id="menu_icon_2">
+                <i class="fa-regular fa-image"></i>
+                <span class="menu_icon_text">Hình nền</span>
+            </div>
+            <div class="menu_icon menu_icon_3" id="menu_icon_3">
+                <i class="fa-solid fa-music"></i>
+                <span class="menu_icon_text">Âm thanh</span>
+            </div>
+            <div class="menu_icon menu_icon_4" id="menu_icon_4">
+                <i class="fa-solid fa-list-check"></i>
+                <span class="menu_icon_text">To-do list</span>
+            </div>
+            <div class="menu_icon menu_icon_5" id="menu_icon_5">
+                <i class="fa-solid fa-sliders"></i>
+                <span class="menu_icon_text">Điều chỉnh</span>
+            </div>
+        </div>
+
+        <!-- Box điều chỉnh thời gian -->
+
+        <div class="timebox" id="timebox">
+            <div class="timebox_1">
+                <span class="box_text">Thời gian</span>
+                <div class="timebox_line" title="Thu nhỏ" id="timebox_line"></div>
+            </div>
+            <div class="timebox_2">
+                <div class="timebox_2-painel">
+                    <p class="timebox_text" id="work">Học</p>
+                    <p class="timebox_text" id="break">Nghỉ</p>
+                </div>
+
+                <div class="timebox_2-timer">
+                    <p id="minutes">30</p>
+                    <p>:</p>
+                    <p id="seconds">00</p>
+                </div>
+
+                <div class="timebox_2-controls">
+                    <button class="timebox_text" id="start" onclick="start()"> Bắt đầu</button>
+                    <button class="timebox_text" id="pause" onclick="pause()"> Dừng</button>
+                    <button class="timebox_text" id="reset" onclick="reset()"> Reset </button>
+                </div>
+
+                <div class="timebox_2-option">
+                    <div class="timebox_2-option--1" id="homework">
+                        <i class="fa-solid fa-book-open timebox_2-option-icon"></i>
+                        <span class="timebox_text">Làm bài tập</span>
+                    </div>
+                    <div class="timebox_2-option--2" id="practise">
+                        <i class="fa-solid fa-copy timebox_2-option-icon"></i>
+                        <span class="timebox_text">Luyện đề</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box điều chỉnh hình nền -->
+        <div id="imagebox" class="imagebox">
+            <div class="imagebox_title">
+                <span class="box_text">Hình nền</span>
+                <div class="imagebox_line" title="Thu nhỏ" id="imagebox_line"></div>
+            </div>
+            <div id="themes" class="theme">
+                <!-- Chủ Đề 1 -->
+                <h3>Chủ đề thiên nhiên</h3>
+                <div class="back-chang" onclick="background1()"><img src="./nature.gif" alt=""></div>
+                <div class="back-chang" onclick="background2()"><img src="./1331312.png" alt=""></div>
+                <div class="back-chang" onclick="background3()"><img src="./7947194.gif" alt=""></div>
+                <div class="back-chang" onclick="background4()"><img src="./240656349_356141432921335_2269866754992327566_n.jpg" alt=""></div>
+            </div>
+        
+            <div id="themes" class="theme">
+                <!-- Chủ Đề 2 -->
+                <h3>Chủ đề thời tiết</h3>
+                <img src="hinh5.jpg" alt="Hình 1">
+                <img src="hinh6.jpg" alt="Hình 2">
+                <img src="hinh7.jpg" alt="Hình 3">
+                <img src="hinh8.jpg" alt="Hình 4">
+    
+            </div>
+        
+            <div id="themes" class="theme">
+                <!-- Chủ Đề 3 -->
+                <h3>Chủ đề du lịch</h3>
+                <img src="hinh9.jpg" alt="Hình 1">
+                <img src="hinh10.jpg" alt="Hình 2">
+                <img src="hinh11.jpg" alt="Hình 3">
+                <img src="hinh12.jpg" alt="Hình 4">
+           
+            </div>
+        
+            <div id="themes" class="theme">
+                <!-- Chủ Đề 4 -->
+                <h3>Chủ đề động vật</h3>
+                <img src="hinh13.jpg" alt="Hình 1">
+                <img src="hinh14.jpg" alt="Hình 2">
+                <img src="hinh15.jpg" alt="Hình 3">
+                <img src="hinh16.jpg" alt="Hình 4">
+            </div>
+        </div>
+        <!-- Box điều chỉnh âm thanh -->
+
+        <div id="sound_container" class="sound_container">
+            <div class="soundbox_title">
+                <span class="box_text">Âm thanh</span>
+                <div class="soundbox_line" title="Thu nhỏ" id="soundbox_line"></div>
+            </div>
+            <div class="audio_content" id="audio_content">
+                <div class="audio">
+                    <h3>Âm thanh thiên nhiên</h3>
+                    <figure>
+                        <img class="thiennhien" src="amthanh1.gif" onclick="selectSound('Thiên nhiên 1')">
+                        <figcaption>Thiên nhiên 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thiennhien" src="amthanh2.gif" onclick="selectSound('Thiên nhiên 2')">
+                        <figcaption>Thiên nhiên 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thiennhien" src="amthanh3.gif" onclick="selectSound('Thiên nhiên 3')">
+                        <figcaption>Thiên nhiên 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thiennhien" src="amthanh4.gif" onclick="selectSound('Thiên nhiên 4')">
+                        <figcaption>Thiên nhiên 4</figcaption>
+                    </figure>
+                    <h3>Nhạc Baroque</h3>
+                    <figure>
+                        <img src="amthanh5.jpg" onclick="selectSound('Baroque 1')">
+                        <figcaption>Baroque 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh6.jpeg" onclick="selectSound('Baroque 2')">
+                        <figcaption>Baroque 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh7.webp" onclick="selectSound('Baroque 3')">
+                        <figcaption>Baroque 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh8.jpg" onclick="selectSound('Baroque 4')">
+                        <figcaption>Baroque 4</figcaption>
+                    </figure>
+                    <h3>Nhạc học tập</h3>
+                    <figure>
+                        <img src="amthanh9.gif" onclick="selectSound('Học tập 1')">
+                        <figcaption>Học tập 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh10.gif" onclick="selectSound('Học tập 2')">
+                        <figcaption>Học tập 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh11.gif" onclick="selectSound('Học tập 3')">
+                        <figcaption>Học tập 3'</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="amthanh12.gif" onclick="selectSound('Học tập 4')">
+                        <figcaption>Học tập 4</figcaption>
+                    </figure>
+                    <h3>Nhạc yêu thích</h3>
+                    <figure>
+                        <img src="hinh13.jpg" onclick="selectSound('Yêu thích 1')">
+                        <figcaption>Yêu thích 1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="hinh14.jpg" onclick="selectSound('Yêu thích 2')">
+                        <figcaption>Yêu thích 2</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="hinh15.jpg" onclick="selectSound('Yêu thích 3')">
+                        <figcaption>Yêu thích 3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="hinh16.jpg" onclick="selectSound('Yêu thích 4')">
+                        <figcaption>Yêu thích 4</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box to-do list -->
+        <div id="todobox" class="todobox">
+            <div class="todobox_title">
+                <span class="box_text">To-do List</span>
+                <div class="todobox_line" title="Thu nhỏ" id="todobox_line"></div>
+            </div>
+            <div>
+                <div id="todobox_note" contenteditable="true">
+                </div>
+            </div>
+            <div id="todobox_note-line">
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+
+        <!-- Box điều chỉnh ba tính năng -->
+
+        <div id="adjustbox" class="adjustbox">
+            <div class="adjustbox_title">
+                <span class="box_text">Điều chỉnh</span>
+                <div class="adjustbox_line" title="Thu nhỏ" id="adjustbox_line"></div>
+            </div>
+            <div class="icondc">
+                <div id="msic">
+                    <i class="fa-solid fa-music fa-music-dieuchinh"></i>
+                    <input type="range" class="t-slide" id="volume-slider" min="0" max="100" value="50" step="1">
+                </div>
+                <div id="msic">  
+                    <i class="fa-solid fa-sun"></i>
+                    <input type="range" class="t-slide" id="light-slider" min="0" max="100" value="50" step="1">
+                 </div>
+                 <div id="msic">  
+                    <i class="fa-solid fa-microphone a"></i>
+                    <input type="range" class="t-slide" id="mic-slider" min="0" max="100" value="50" step="1">
+                </div>
+            </div>
+        </div>
+
+        <!--Trở về phòng của mình -->
+        <a class="friendroom" href="home.html">
+            <div class="friendroom_go">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="friendroom_id">
+                <span class="friendroom_id-1"> Thoát phòng </span>
+            </div>
+        </a>
+
+        <!--Mic và tin nhắn -->
+        <div class="micboxinbox">
+            <div class="play_box_icon play_box_icon_inbox" id="inbox_button">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+            <div class="play_box_icon play_box_icon_micbox">
+                <div class="fa-micro--off">
+                    <i class="fa-solid fa-microphone-slash"></i>
+                </div>
+                <div class="fa-micro--on">
+                    <i class="fa-solid fa-microphone"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box tin nhắn -->
+
+        <div class="inbox" id="inbox">
+            <div class="inbox_title">
+                <span class="box_text"> Kênh trò chuyện </span>
+                <div class="inbox_title-line" id="inbox_title-line" title="Thu nhỏ"> </div>
+            </div>
+            <div class="inbox_chat">
+                <div class="inbox_chat-1">
+                    <span class="inbox_chat-name1"> Hoàng Chinh</span>
+                    <span class="inbox_chat-text1"> Tí đi ăn không? </span>
+                </div>
+                <div class="inbox_chat-2">
+                    <span class="inbox_chat-text2"> Đang học mà bro </span>
+                </div>
+                <div class="inbox_chat-3">
+                    <span class="inbox_chat-name3"> Ngô Văn Thìn</span>
+                    <span class="inbox_chat-text3"> Có đi, tí nữa làm bài xong </span>
+                </div>
+            </div>
+            <div class="inbox_sent">
+                <i class="fa-regular fa-face-smile" id="inbox_sent-icon"></i>
+                <input type="text" class="inbox_sent-type" placeholder="Aa">
+                <i class="fa-solid fa-play" id="inbox_sent-icon"></i>
+            </div>
+        </div>
+
+        <!--Box hiện tên người tham gia phòng -->
+        <div class="joinername">
+            <div class="joinername_1">
+                <div class="joinername_text">Bạn</div>
+                <i class="fa-solid fa-microphone-slash" id="fa-micro--unmuted" title="unmuted"></i>
+            </div>
+            <div class="joinername_2"> 
+                <div class="joinername_text">Bùi Trần Việt Hoàng </div>
+                <i class="fa-solid fa-microphone-slash" id="fa-micro--unmuted" title="unmuted"></i>
+            </div>
+            <div class="joinername_3">
+                <div class="joinername_text"> Phạm Phương Trinh </div>
+                <i class="fa-solid fa-microphone-slash" id="fa-micro--unmuted" title="unmuted"></i>
+            </div>
+            <div class="joinername_4">
+                <div class="joinername_text"> Lê Bảo Ngọc </div>
+                <i class="fa-solid fa-microphone-slash" id="fa-micro--unmuted" title="unmuted"></i>
+            </div>
+            <div class="joinername_5">
+                <div class="joinername_text"> Ngô Văn Thìn </div>
+                <i class="fa-solid fa-microphone-slash" id="fa-micro--unmuted" title="unmuted"></i>
+            </div>
+        </div>
+   </div>
+   <script src="home.js"></script>
+   <script src="sound.js"></script>
+</body>
+</html>

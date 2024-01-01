@@ -1,0 +1,185 @@
+/* html{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+} */
+/* CSS cho hình nền */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Đặt lớp hiển thị dưới cùng */
+    background-image: url('1331312.png'); /* Đường dẫn đến hình ảnh nền PNG */
+    background-size: cover; /* Hiển thị hình nền toàn màn hình */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CSS cho thanh taskbar */
+.navbar {
+    height: 55px;
+    background-color: rgb(253, 249, 249); /* Màu nền của thanh taskbar */
+    color: #fff; /* Màu chữ trên thanh taskbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    position: fixed; /* Đặt thanh taskbar ở vị trí cố định */
+    top: 0; /* Đặt thanh taskbar lên trên cùng */
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+}
+
+/* CSS cho logo */
+.logo{
+    display: flex;
+}
+
+.logo_image {
+    width: 45px;
+    height: 45px;
+    background-image: url(logoo.png);
+    background-color: var(--green-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+}
+
+.logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /* Điều chỉnh kích thước chữ */
+    color:var(--green-color); /* Màu chữ chào mừng */
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+/* CSS cho chức năng đăng nhập/đăng ký */
+.login-register {
+    text-align: right;
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các nút đăng nhập và đăng ký */
+    align-items: center; /* Canh giữa theo chiều dọc */
+}
+h3 {
+    color: var(--green-color);
+    font-size: 1.6rem ;
+    margin-right: 0px  ;
+
+}
+/* CSS cho nút đăng nhập và đăng ký */
+.line {
+    border-left: 1px solid #0e613d51; /* Màu đường thẳng */
+    height: 55px; /* Chiều cao của đường thẳng */
+    margin: 15px; /* Khoảng cách từ lề trái */
+}
+.login-button {
+    background-color: #76A77A; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
+    padding: 9px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.register-button {
+    background-color: #76A77A; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
+    padding: 8.9px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng màu nền khi hover */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+
+/* Hiệu ứng màu nền khi hover */
+.login-button:hover, .register-button:hover {
+    background-color: #25835a; /* Màu nền nút khi hover */
+}
+
+/* CSS cho dòng chữ chào mừng */
+.container {
+    width: 50%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+}
+.line2 {
+    height: 80%;
+    margin-left: 30px;
+    width: 30px; /* Độ rộng của đường thẳng */
+    background-color: #ffffffe1; /* Màu sắc của đường thẳng */
+    border-radius: 20px;
+}
+
+.welcome-text {
+    /* background-color: #38403d4b; */
+    border-radius: 40px;
+    padding: 1px 40px  ;
+
+    color: var(--white-color);
+}
+h1{
+    width: 90%;
+    color: var(--white-color);
+    font-size: 6.5rem;
+    padding-left: 25px;
+    line-height: 8rem;
+}
+h2{
+    width: 90%;
+    color: var(--white-color);
+    font-size: 2.1rem;
+    margin-top: 0px;
+    padding-left: 25px ;
+    /* padding-bottom: 39px; */
+    line-height: 3rem;
+    text-align: justify;
+    
+}
+.vaohoc{
+    width: 90%;
+    /* background-color: var(--green-color); */
+    padding-bottom: 20px;
+    color: #fff; /* Màu chữ nút */
+    display: flex;
+    justify-content: right;
+
+}
+.login-button1{
+    width: 170px;
+    height: 55px;
+    background-color: #ffffff13;
+    margin-top: 20px;
+    font-size: 26px;
+    padding: 8px;
+    border-radius: 40px;
+    text-decoration: rgb(169, 15, 169);
+    color: var(--white-color);
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-button1:hover {
+    background-color: #ffffff7c;
+    color: #000000;
+
+}
